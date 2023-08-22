@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MainPageCss/NavBar.css">
+    <link rel="stylesheet" href="MainPageCss/Responsive.css">
+    <link rel="stylesheet" href="MainPageCss/CarouselSection.css">
+    <link rel="stylesheet" href="MainPageCss/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="MainPageCss/ResponsiveHeroSection.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_container" id="navContainer">
+                <div class="nav_menu">
+
+                    <button id="navToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="logo">
+                    <img src="https://animixplay.b-cdn.net/wp-content/uploads/2022/10/cropped-animixplaylogo-1.png"
+                        alt="logoImg">
+                </div>
+
+                <div id="searchBar" class="nav_searchBar">
+                    <input type="text" placeholder="Search Anime...">
+                    <button type="submit" id="mainSearchBarFinder">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button type="submit" id="mainSearchBarFilter">
+                        Filter
+                    </button>
+                </div>
+
+                <div id="randomFinder">
+                    <button type="submit" class="randonFinderBtn">
+                        <i class="fas fa-random"></i>
+                    </button>
+                </div>
+
+                <div id="loginBtn">
+                    <button type="submit" class="navLoginBtn" id="navLoginBtn">
+                        Login
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="hiddenNavMenu" id="navMenu">
+            <button class="navMenuCloseBtn" id="navToggleClose">
+                <i class="fas fa-arrow-left"></i>
+                Close Menu
+            </button>
+
+            <li class="nav_element">
+                <a href="#" class="nav_link">AnimxPlay</a>
+            </li>
+
+            <hr>
+
+            <li class="nav_element">
+                <a href="#" class="nav_link">Most Popular Anime</a>
+            </li>
+
+            <hr>
+
+            <li class="nav_element">
+                <a href="#" class="nav_link">Top Currently Anime</a>
+            </li>
+
+            <hr>
+
+            <li class="nav_element">
+                <a href="#" class="nav_link">Latest Update Anime</a>
+            </li>
+
+            <hr>
+
+            <li class="nav_element">
+                <a href="#" class="nav_link">Recently Added Anime</a>
+            </li>
+
+            <hr>
+
+            <li class="nav_element">
+                <a href="#" class="nav_link">Sitemap</a>
+            </li>
+
+            <hr>
+
+            <h3 style="color: white; font-family: 'Montserrat', sans-serif;padding-left: 10px;">Genre</h3>
+
+
+            <div id="genreContainer">
+
+                <a href="#" class="blueGenre">Action</a>
+                <a href="#" class="greenGenre">Adult Case</a>
+                <a href="#" class="lightgreenGenre">Adventure</a>
+                <a href="#" class="orangeGenre">Antropomorphic</a>
+                <a href="#" class="yellowGenre">Avant Garde</a>
+                <a href="#" class="pinkGenre">Avant Garde</a>
+                <a href="#" class="lightblueGenre">Boys Love</a>
+
+                <a href="#" class="blueGenre">CGDCT</a>
+                <a href="#" class="greenGenre">Childdare</a>
+                <a href="#" class="lightgreenGenre">Combat sport</a>
+                <a href="#" class="orangeGenre">Comedy</a>
+                <a href="#" class="blueGenre">Crossdressing</a>
+                <a href="#" class="pinkGenre">Delinquents</a>
+                <a href="#" class="lightblueGenre">Detective</a>
+
+                <a href="#" class="blueGenre">Drama</a>
+                <a href="#" class="greenGenre">Ecchi</a>
+                <a href="#" class="lightgreenGenre">Education</a>
+                <a href="#" class="orangeGenre">Erotica</a>
+                <a href="#" class="blueGenre">Fantasy</a>
+                <a href="#" class="pinkGenre">Gag Humor</a>
+                <a href="#" class="lightblueGenre">Girls Love</a>
+
+                <a href="#" class="blueGenre">Gore</a>
+                <a href="#" class="greenGenre">Gourmet</a>
+                <a href="#" class="lightgreenGenre">Harem</a>
+                <a href="#" class="orangeGenre">Hentai</a>
+                <a href="#" class="blueGenre">High Stakes Game</a>
+                <a href="#" class="pinkGenre">Historical</a>
+                <a href="#" class="lightblueGenre">Horro</a>
+
+                <a href="#" class="blueGenre">Action</a>
+                <a href="#" class="greenGenre">Adult Case</a>
+                <a href="#" class="lightgreenGenre">Adventure</a>
+                <a href="#" class="orangeGenre">Antropomorphic</a>
+                <a href="#" class="blueGenre">Avant Garde</a>
+                <a href="#" class="pinkGenre">Avant Garde</a>
+                <a href="#" class="lightblueGenre">Boys Love</a>
+
+                <a href="#" class="blueGenre">Action</a>
+                <a href="#" class="greenGenre">Adult Case</a>
+                <a href="#" class="lightgreenGenre">Adventure</a>
+                <a href="#" class="orangeGenre">Antropomorphic</a>
+                <a href="#" class="blueGenre">Avant Garde</a>
+                <a href="#" class="pinkGenre">Avant Garde</a>
+                <a href="#" class="lightblueGenre">Boys Love</a>
+
+                <a href="#" class="blueGenre">Action</a>
+                <a href="#" class="greenGenre">Adult Case</a>
+                <a href="#" class="lightgreenGenre">Adventure</a>
+                <a href="#" class="orangeGenre">Antropomorphic</a>
+                <a href="#" class="blueGenre">Avant Garde</a>
+                <a href="#" class="pinkGenre">Avant Garde</a>
+                <a href="#" class="lightblueGenre">Boys Love</a>
+
+                <a href="#" class="blueGenre">Action</a>
+                <a href="#" class="greenGenre">Adult Case</a>
+                <a href="#" class="lightgreenGenre">Adventure</a>
+                <a href="#" class="orangeGenre">Antropomorphic</a>
+                <a href="#" class="blueGenre">Avant Garde</a>
+                <a href="#" class="pinkGenre">Avant Garde</a>
+                <a href="#" class="lightblueGenre">Boys Love</a>
+            </div>
+        </ul>
+    </header>
+
+    <div id="loginForm" class="loginForm">
+        <form action="submit">
+            <label for="SignUp">Sign in your account</label>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="loginMenuFormBtn">Log me in</button>
+        </form>
+    </div>
+
+    <section class="carouselSection">
+        <div id="carouselContainer" class="carousel_Container">
+            <div class="carouselFrame1 slide" >
+                <img src="https://www.themoviedb.org/t/p/original/a6ptrTUH1c5OdWanjyYtAkOuYD0.jpg" alt="" draggable="false" >
+
+                <div id="carouselFrame1Data">
+                    <h3 class="spotLight">#1 Spotlight</h3>
+                    <h1 class="carouselFrame1Title">One Piece</h1>
+                    <div class="carouselWatchData">
+                        <i class="fas fa-play"></i>
+                        TV
+
+                        <i class="fas fa-clock"></i>
+                        24min
+
+                        <i class="fas fa-film"></i>
+                        fall 1999
+
+                        <button class="carouselDubBtn">
+                            DUB
+                        </button>
+
+                        <button class="carouselHDBtn">
+                            HD
+                        </button>
+
+                        <button class="carouselSubBtn">
+                            SUB
+                        </button>
+                    </div>
+
+                    <div class="carouselDesc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore earum possimus doloremque
+                        perspiciatis aliquid, modi deleniti voluptatum corporis nobis, eveniet cum nihil nemo? Eum
+                        eligendi, et nesciunt enim ullam fugiat tenetur temporibus harum soluta itaque ea voluptas quis
+                        inventore molestiae in voluptatum illum obcaecati repellat, aperiam sint saepe perspiciatis? Non
+                        culpa consequuntur ea laboriosam voluptas quidem! Nulla, commodi odit?
+                    </div>
+
+                    <div class="carouselDataBtn">
+                        <button class="carouselWatchNowBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Now
+                        </button>
+
+                        <button class="carouselDetailBtn">
+                            Details
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carouselFrame2 slide" >
+                <img src="assets/Naruto.jpg" alt="">
+
+                <div id="carouselFrame1Data">
+                    <h3 class="spotLight">#2 Spotlight</h3>
+                    <h1 class="carouselFrame1Title">Naruto</h1>
+                    <div class="carouselWatchData">
+                        <i class="fas fa-play"></i>
+                        TV
+
+                        <i class="fas fa-clock"></i>
+                        23min
+
+                        <i class="fas fa-film"></i>
+                        fall 1999
+
+                        <button class="carouselDubBtn">
+                            DUB
+                        </button>
+
+                        <button class="carouselHDBtn">
+                            HD
+                        </button>
+
+                        <button class="carouselSubBtn">
+                            SUB
+                        </button>
+                    </div>
+
+                    <div class="carouselDesc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore earum possimus doloremque
+                        perspiciatis aliquid, modi deleniti voluptatum corporis nobis, eveniet cum nihil nemo? Eum
+                        eligendi, et nesciunt enim ullam fugiat tenetur temporibus harum soluta itaque ea voluptas quis
+                        inventore molestiae in voluptatum illum obcaecati repellat, aperiam sint saepe perspiciatis? Non
+                        culpa consequuntur ea laboriosam voluptas quidem! Nulla, commodi odit?
+                    </div>
+
+                    <div class="carouselDataBtn">
+                        <button class="carouselWatchNowBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Now
+                        </button>
+
+                        <button class="carouselDetailBtn">
+                            Details
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carouselFrame3 slide">
+                <img src="assets/bleach___soul_reapers_ii-wallpaper-1920x1200.jpg" alt="">
+
+                <div id="carouselFrame1Data">
+                    <h3 class="spotLight">#3 Spotlight</h3>
+                    <h1 class="carouselFrame1Title">Bleach</h1>
+                    <div class="carouselWatchData">
+                        <i class="fas fa-play"></i>
+                        TV
+
+                        <i class="fas fa-clock"></i>
+                        24min
+
+                        <i class="fas fa-film"></i>
+                        fall 1999
+
+                        <button class="carouselDubBtn">
+                            DUB
+                        </button>
+
+                        <button class="carouselHDBtn">
+                            HD
+                        </button>
+
+                        <button class="carouselSubBtn">
+                            SUB
+                        </button>
+                    </div>
+
+                    <div class="carouselDesc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore earum possimus doloremque
+                        perspiciatis aliquid, modi deleniti voluptatum corporis nobis, eveniet cum nihil nemo? Eum
+                        eligendi, et nesciunt enim ullam fugiat tenetur temporibus harum soluta itaque ea voluptas quis
+                        inventore molestiae in voluptatum illum obcaecati repellat, aperiam sint saepe perspiciatis? Non
+                        culpa consequuntur ea laboriosam voluptas quidem! Nulla, commodi odit?
+                    </div>
+
+                    <div class="carouselDataBtn">
+                        <button class="carouselWatchNowBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Now
+                        </button>
+
+                        <button class="carouselDetailBtn">
+                            Details
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carouselBtns">
+                <button class="carouselBtn" id="carouselNextBtn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="carouselBtn" id="carouselPreBtn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="trendingSection">
+        <div class="trending_Container" id="trendingContainer">
+            <h1>Trending</h1>
+
+            <div class="item_Container">
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <img  class="image" src="assets/asset 10.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 11.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 12.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 13.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 14.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 15.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 16.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 17.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 18.jpeg" alt="" draggable="false">
+                    <img  class="image" src="assets/asset 19.jpeg" alt="" draggable="false">
+                </div>
+    
+            </div>
+
+        </div>
+    </section>
+
+
+   <section class="HeroSection">
+    <section class="updateSection">
+        <div class="shareContainer">
+            <div class="shareText">
+                <h1>Share AnimxPlay</h1>
+                <p>to your friends!</p>
+            </div>
+
+            <ul class="brandingIcons">
+                <li class="brandingList">
+                    <button class="telegramBtn brandingBtn">
+                        <a href="#" class="brandingLink">
+                            <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                            Telegram
+                        </a>
+                    </button>
+                </li>
+                <li class="brandingList">
+                    <button class="redditBtn brandingBtn">
+                        <a href="#" class="brandingLink">
+                            <i class="fa-brands fa-reddit" style="color: #ffffff;"></i>
+                            Reddit
+                        </a>
+                    </button>
+                </li>
+                <li class="brandingList">
+                    <button class="facebookBtn brandingBtn">
+                        <a href="#" class="brandingLink">
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            Facebook
+                        </a>
+                    </button>
+                </li>
+                <li class="brandingList">
+                    <button class="whatsappBtn brandingBtn">
+                        <a href="#" class="brandingLink">
+                            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                            Whatsapp
+                        </a>
+                    </button>
+                </li>
+                <li class="brandingList">
+                    <button class="twitterBtn brandingBtn">
+                        <a href="#" class="brandingLink">
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            Twitter
+                        </a>
+                    </button>
+                </li>
+                <li class="brandingList">
+                    <button class="tumblrBtn brandingBtn">
+                        <a href="#" class="brandingLink">
+                            <i class="fa-brands fa-square-tumblr"></i>
+                            Tumblr
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="latestUpdate">
+
+            <h1>Latest Anime</h1>
+
+            <a href="#" class="latestViewMore">
+                View More
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <div class="latestCardContainer">
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 21.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 4</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Uma Musume</h1>
+                        <ul>
+                            <li class="aboutStats">1999</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">24m</li>
+                        </ul>
+                    </div>
+                    
+                </div>  
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 27.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 7</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2023</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">24m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 18.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 11</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2023</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">23m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 29.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 72</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2021</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">23m</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="latestCardItem">
+                    <img src="assets/asset 19.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 10</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2023</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">24m</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="latestCardItem">
+                    <img src="assets/asset 26.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 12</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2023</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">24m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 26.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 11</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2023</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">23m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 3.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 17</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2021</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">24m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 25.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 1</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2023</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">23m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="latestCardItem">
+                    <img src="assets/asset 16.jpeg" alt="" draggable="false">
+                    <button class="epNos">Ep 102</button>
+                    <div class="aboutLatestAnimeText">
+                        <h1>Lorem, ipsum.</h1>
+                        <ul>
+                            <li class="aboutStats">2018</li>
+                            <li class="aboutStats">TV</li>
+                            <li class="aboutStats">23m</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hoverLatestContainer" id="lastHiddenMenu">
+                    <h1>Lorem ipsum dolor.</h1>
+                    <div class="ratingLatest">
+                        <i class="fas fa-star">8.5</i>
+                        <h3>Ep 5</h3>
+                        <button class="ratingBtn">TV</button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi facilis, ratione assumenda magni nisi perferendis quod magnam similique quos alias voluptatem vel aspernatur molestias quaerat esse porro necessitatibus excepturi.</p>
+        
+                    <h4>Rating:PG-13 -Teens or older</h4>
+                    <h4>Native:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus aliquam suscipit!</h4>
+                    <h4>Aired:20 April 2023</h4>
+                    <h4>Duration: 24min</h4>
+                    <h4>Score: 8.5</h4>
+                    <h4>Producer: Lorem, ipsum dolor.</h4>
+        
+                    <div class="latestHeroBtns">
+                        <button class="watchNowLatestBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Now
+                        </button>
+        
+                        <button class="addToQueuebtn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="newAdded">
+            <h1>Newly Added</h1>
+
+           <div class="rightpanelBtns">
+            <button class="newAddedPreBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            <button class="newAddedNextBtn">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+            <a href="#" class="newAddedViewMore">
+                View More
+                <i class="fas fa-arrow-right"></i>
+            </a>
+           </div>
+
+            <div class="newAddedContainer">
+                <div class="newAddedItemContainer">
+                    <div class="newAddedCardItem">
+                        <img src="assets/asset 17.jpeg" alt="" draggable="false">
+                        <button class="newAddedEpNos">Ep 1072</button>
+                        <div class="aboutLatestAnimeText">
+                            <h1>Lorem, ipsum.</h1>
+                            <ul>
+                                <li class="aboutStats">1999</li>
+                                <li class="aboutStats">TV</li>
+                                <li class="aboutStats">24m</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="newAddedCardItem">
+                        <img src="assets/asset 16.jpeg" alt="" draggable="false">
+                        <button class="newAddedEpNos">Ep 72</button>
+                        <div class="aboutLatestAnimeText">
+                            <h1>Lorem, ipsum.</h1>
+                            <ul>
+                                <li class="aboutStats">1999</li>
+                                <li class="aboutStats">TV</li>
+                                <li class="aboutStats">24m</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="newAddedCardItem">
+                        <img src="assets/asset 21.jpeg" alt="" draggable="false">
+                        <button class="newAddedEpNos">Ep 172</button>
+                        <div class="aboutLatestAnimeText">
+                            <h1>Lorem, ipsum.</h1>
+                            <ul>
+                                <li class="aboutStats">1999</li>
+                                <li class="aboutStats">TV</li>
+                                <li class="aboutStats">24m</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="newAddedCardItem">
+                        <img src="assets/asset 12.jpeg" alt="" draggable="false">
+                        <button class="newAddedEpNos">Ep 12</button>
+                        <div class="aboutLatestAnimeText">
+                            <h1>Lorem, ipsum.</h1>
+                            <ul>
+                                <li class="aboutStats">1999</li>
+                                <li class="aboutStats">TV</li>
+                                <li class="aboutStats">24m</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="newAddedCardItem">
+                        <img src="assets/asset 13.jpeg" alt="" draggable="false">
+                        <button class="newAddedEpNos">Ep 1072</button>
+                        <div class="aboutLatestAnimeText">
+                            <h1>Lorem, ipsum.</h1>
+                            <ul>
+                                <li class="aboutStats">1999</li>
+                                <li class="aboutStats">TV</li>
+                                <li class="aboutStats">24m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="newAddedHoverHiddenMenu">
+                    <h1>Lorem ipsum dolor.</h1>
+                    <div class="ratingLatest">
+                        <i class="fas fa-star">8.5</i>
+                        <h3>Ep 5</h3>
+                        <button class="ratingBtn">TV</button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi facilis, ratione assumenda magni nisi perferendis quod magnam similique quos alias voluptatem vel aspernatur molestias quaerat esse porro necessitatibus excepturi.</p>
+        
+                    <h4>Rating:PG-13 -Teens or older</h4>
+                    <h4>Native:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus aliquam suscipit!</h4>
+                    <h4>Aired:20 April 2023</h4>
+                    <h4>Duration: 24min</h4>
+                    <h4>Score: 8.5</h4>
+                    <h4>Producer: Lorem, ipsum dolor.</h4>
+        
+                    <div class="latestHeroBtns">
+                        <button class="watchNowLatestBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Now
+                        </button>
+        
+                        <button class="addToQueuebtn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="upcommingAnime">
+            <div class="newAdded">
+                <h1>Upcomming Anime</h1>
+    
+               <div class="rightpanelBtns">
+                <button class="newAddedPreBtn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+    
+                <button class="newAddedNextBtn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+    
+                <a href="#" class="newAddedViewMore">
+                    View More
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+               </div>
+    
+                <div class="upcommingAnimeContainer">
+                    <div class="upcommingAnimeItems">
+                        <div class="upcomminAnimeCardItem">
+                            <img src="assets/asset 18.jpeg" alt="" draggable="false">
+                            <button class="upcommingEpNos">Ep 1072</button>
+                            <div class="aboutLatestAnimeText">
+                                <h1>Lorem, ipsum.</h1>
+                                <ul>
+                                    <li class="aboutStats">1999</li>
+                                    <li class="aboutStats">TV</li>
+                                    <li class="aboutStats">24m</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="upcomminAnimeCardItem">
+                            <img src="assets/asset 19.jpeg" alt="" draggable="false">
+                            <button class="upcommingEpNos">Ep 1072</button>
+                            <div class="aboutLatestAnimeText">
+                                <h1>Lorem, ipsum.</h1>
+                                <ul>
+                                    <li class="aboutStats">1999</li>
+                                    <li class="aboutStats">TV</li>
+                                    <li class="aboutStats">24m</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="upcomminAnimeCardItem">
+                            <img src="assets/asset 20.jpeg" alt="" draggable="false">
+                            <button class="upcommingEpNos">Ep 1072</button>
+                            <div class="aboutLatestAnimeText">
+                                <h1>Lorem, ipsum.</h1>
+                                <ul>
+                                    <li class="aboutStats">1999</li>
+                                    <li class="aboutStats">TV</li>
+                                    <li class="aboutStats">24m</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="upcomminAnimeCardItem">
+                            <img src="assets/asset 21.jpeg" alt="" draggable="false">
+                            <button class="upcommingEpNos">Ep 1072</button>
+                            <div class="aboutLatestAnimeText">
+                                <h1>Lorem, ipsum.</h1>
+                                <ul>
+                                    <li class="aboutStats">1999</li>
+                                    <li class="aboutStats">TV</li>
+                                    <li class="aboutStats">24m</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="upcomminAnimeCardItem">
+                            <img src="assets/asset 16.jpeg" alt="" draggable="false">
+                            <button class="upcommingEpNos">Ep 1072</button>
+                            <div class="aboutLatestAnimeText">
+                                <h1>Lorem, ipsum.</h1>
+                                <ul>
+                                    <li class="aboutStats">1999</li>
+                                    <li class="aboutStats">TV</li>
+                                    <li class="aboutStats">24m</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div id="upcomAnimeHoverHiddenMenu">
+                        <h1>Lorem ipsum dolor.</h1>
+                        <div class="ratingLatest">
+                            <i class="fas fa-star">8.5</i>
+                            <h3>Ep 5</h3>
+                            <button class="ratingBtn">TV</button>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi facilis, ratione assumenda magni nisi perferendis quod magnam similique quos alias voluptatem vel aspernatur molestias quaerat esse porro necessitatibus excepturi.</p>
+            
+                        <h4>Rating:PG-13 -Teens or older</h4>
+                        <h4>Native:Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptatibus aliquam suscipit!</h4>
+                        <h4>Aired:20 April 2023</h4>
+                        <h4>Duration: 24min</h4>
+                        <h4>Score: 8.5</h4>
+                        <h4>Producer: Lorem, ipsum dolor.</h4>
+            
+                        <div class="latestHeroBtns">
+                            <button class="watchNowLatestBtn">
+                                <i class="fas fa-play"></i>
+                                Watch Now
+                            </button>
+            
+                            <button class="addToQueuebtn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="GenreSection">
+        <h1>Genre</h1>
+        <div class="GenreContainer">
+            <ul>
+               <a href="#" class="genreContainerLink blueGenre">Action</a>
+               <a href="#" class="genreContainerLink greenGenre">Adult Cast</a>
+               <a href="#" class="genreContainerLink lightgreenGenre">Adventure</a>
+               <a href="#" class="genreContainerLink orangeGenre">Antropomorphic</a>
+               <a href="#" class="genreContainerLink yellowGenre">Avant Garde</a>
+               <a href="#" class="genreContainerLink pinkGenre">Award Winning</a>
+               <a href="#" class="genreContainerLink lightBlueGenre">Boys Love</a>
+               <a href="#" class="genreContainerLink blueGenre">CGDCT</a>
+               <a href="#" class="genreContainerLink greenGenre">Childdare</a>
+               <a href="#" class="genreContainerLink lightgreenGenre">Combat Sport</a>
+               <a href="#" class="genreContainerLink orangeGenre">Comedy</a>
+               <a href="#" class="genreContainerLink yellowGenre">Cross Dressing</a>
+               <a href="#" class="genreContainerLink pinkGenre">Delinquents</a>
+               <a href="#" class="genreContainerLink lightBlueGenre">Detective</a>
+               <a href="#" class="genreContainerLink blueGenre">Drama</a>
+               <a href="#" class="genreContainerLink greenGenre">Ecchi</a>
+               <a href="#" class="genreContainerLink lightgreenGenre">Education</a>
+               <a href="#" class="genreContainerLink orangeGenre">Erotica</a>
+               <a href="#" class="genreContainerLink yellowGenre">Fantasy</a>
+               <a href="#" class="genreContainerLink pinkGenre">Gag Humor</a>
+               <a href="#" class="genreContainerLink lightBlueGenre">Girls Loce</a>
+               <a href="#" class="genreContainerLink blueGenre">Gore</a>
+               <a href="#" class="genreContainerLink greenGenre">Gourmet</a>
+               <a href="#" class="genreContainerLink lightgreenGenre">Harem</a>
+            </ul>
+
+            <button class="showMoreGenre">
+                View More
+            </button>
+        </div>
+    </section>
+
+   </section>
+
+
+  
+   <footer class="Footer_stats">
+    <div class="Footer_container">
+        <div class="footer_branding">
+            <img src="https://animixplay.b-cdn.net/wp-content/uploads/2022/10/cropped-animixplaylogo-1.png" alt="">
+
+            <div class="branding_text">
+                <h3>Join Now</h3>
+                <h2><a href="#">AnimixPlay</a></h>
+            </div>
+        </div>
+
+        <div class="footer_nav">
+            <ul class="footer_nav-menu">
+                <li class="footer_nav-element">
+                    <a href="#" class="footer_nav-link">AnimixPlay</a>
+                </li>
+                <li class="footer_nav-element">
+                    <a href="#" class="footer_nav-link">DMCA</a>
+                </li>
+                <li class="footer_nav-element">
+                    <a href="#" class="footer_nav-link">Privacy and Policy</a>
+                </li>
+                <li class="footer_nav-element">
+                    <a href="#" class="footer_nav-link">Sitemap</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copy_right">
+            <p>© 2021 AnimixPlay All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="Scripts/Script.js">
+        // Main Script File
+    </script>
+</body>
+
+</html>
