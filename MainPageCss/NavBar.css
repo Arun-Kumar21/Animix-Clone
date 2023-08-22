@@ -1,0 +1,291 @@
+/* import fonts for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Basic Required Css Variable */
+:root{
+    font-size: 16px;
+    --primary-font: 'Poppins', sans-serif;
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #0D6EFD;
+    --danger-color: #F44336;
+    --success-color: #4CAF50;
+    --roboto-font: 'Roboto', sans-serif;
+    --raleway-font: 'Raleway', sans-serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --blue-color : #0B88C8;
+}
+
+/* Basic Required Css */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #16171a;
+}
+
+
+
+    /* NavBar CSS */
+
+.nav_container{
+    margin: 0 10% 0 10%; 
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 9;
+}
+
+#navToggle{
+    /* display: none; */
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.nav_searchBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#searchBar input{
+    width: 448px;
+    height: 40px;
+    font-family: var(--montserrat-font);
+    font-size: 1rem;
+    padding-left: 10px;
+    font-weight: 500;
+    flex: 1;
+}
+
+#mainSearchBarFinder{
+    position: absolute;
+    top: 0;
+    right: 64px;
+    font-size: 1.25rem;
+    padding: 9px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#mainSearchBarFilter{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(50, 50, 50);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.randonFinderBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.navLoginBtn{
+    width: 79px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.navLoginBtn:hover{
+    background-color: #0b5ed7;
+}
+
+
+#loginBtn i{
+    display: none;
+}
+
+.loginForm{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.loginForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.loginForm form label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--white-color);
+    font-family: var(--montserrat-font);
+}
+
+
+.loginForm form input{
+    width: 248px;
+    height: 49px;
+    font-family: var(--montserrat-font);
+    font-size: 1rem;
+    opacity: 0.8;
+    line-height: 24px;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+.loginForm form input:focus{
+    outline: none;
+}
+
+.loginMenuFormBtn{
+    margin-top: 1rem;
+    width: 248px;
+    height: 49px;
+    font-family: var(--montserrat-font);
+    font-size: 1rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loginMenuFormBtn:hover{
+    background-color: #0b5ed7;
+}
+
+
+.hiddenNavMenu{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 18%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    background-color: #16171A;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+}
+
+.navMenuCloseBtn{
+    margin: 20px;
+    color: var(--white-color);
+    background-color: #454548;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: var(--montserrat-font);
+    cursor: pointer;
+}
+
+.navMenuCloseBtn:hover{
+    background-color: #4f4f52;
+}
+
+.hiddenNavMenu hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #454548;
+}
+
+
+.hiddenNavMenu li{
+    list-style: none;
+    padding: 15px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.hiddenNavMenu li a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--montserrat-font);
+    font-weight: 700;
+}
+
+.hiddenNavMenu li a:hover{
+    color: #0284C7;
+}
+
+#genreContainer{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#genreContainer a{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--montserrat-font);
+    font-size: .8rem;
+}
+
+.blueGenre{
+    color: #2A94D8;
+}
+
+.greenGenre{
+    color: #28BA88;
+}
+
+.lightgreenGenre{
+    color: #8DCA31;
+}
+
+.orangeGenre{
+    color: #C7853B;
+}
+
+.yellowGenre{
+    color: #F0C419;
+}
+
+.pinkGenre{
+    color: #eb64b5;
+}
+
+.lightBlueGenre{
+    color: #37AED6;
+}
+

@@ -1,0 +1,210 @@
+/* import fonts for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Basic Required Css Variable */
+:root{
+    font-size: 16px;
+    --primary-font: 'Poppins', sans-serif;
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #0D6EFD;
+    --danger-color: #F44336;
+    --success-color: #4CAF50;
+    --roboto-font: 'Roboto', sans-serif;
+    --raleway-font: 'Raleway', sans-serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --blue-color : #0B88C8;
+}
+
+
+    /* Responsive for Mobile devices */
+
+@media (max-width:768px){
+
+    .trendingSection{
+        display: none; 
+     }
+
+    .shareContainer{
+        display: none;
+    }
+    
+    .updateSection{
+        width: 100%;
+        margin: 0;
+    }
+    .latestUpdate{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+
+    .latestViewMore{
+        position: absolute;
+        font-size: 12px;
+    }
+
+    .latestCardContainer{
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        height: 100%;
+    }
+
+    .hoverLatestContainer{
+        opacity: 0;
+    }
+
+    .newAdded{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+
+    .newAddedPreBtn{
+        display: none;
+    }
+
+    .newAddedNextBtn{
+        display: none;
+    }
+
+    .newAddedItemContainer{
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        height: 100%;
+    }
+
+    #newAddedHoverHiddenMenu{
+        opacity: 0;
+    }
+
+    .upcommingAnimeItems{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+    }
+
+    #upcomAnimeHoverHiddenMenu{
+        opacity: 0;
+    }
+
+    .GenreSection{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .GenreContainer{
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .footer_stats{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .footer_branding{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .newAddedViewMore{
+        font-size: 12px;
+    }
+
+}
+
+
+/* Responsive for Tablet devices */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .trendingSection{
+        display: none;
+    }
+
+    .shareContainer{
+        margin-top: 5%;
+        width: 100%;
+
+    }
+    
+    .updateSection{
+        width: 100%;
+        margin: 0;
+    }
+
+    .latestUpdate{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+
+    .latestCardContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .hoverLatestContainer{
+        opacity: 0;
+    }
+
+    .newAdded{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+
+    
+    .newAddedItemContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    #newAddedHoverHiddenMenu{
+        opacity: 0;
+    }
+
+    .upcommingAnimeItems{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    #upcomAnimeHoverHiddenMenu{
+        opacity: 0;
+    }
+
+    .GenreSection{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        right: 0;
+    }
+
+    
+
+}

@@ -1,0 +1,595 @@
+/* import fonts for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Basic Required Css Variable */
+:root{
+    font-size: 16px;
+    --primary-font: 'Poppins', sans-serif;
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #0D6EFD;
+    --danger-color: #F44336;
+    --success-color: #4CAF50;
+    --roboto-font: 'Roboto', sans-serif;
+    --raleway-font: 'Raleway', sans-serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --blue-color : #0B88C8;
+}
+
+
+.trendingSection{
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+}
+
+.trending_Container{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trending_Container h1{
+    font-size: 1rem;
+    color: var(--blue-color);
+    text-align: left;
+    font-family: var(--montserrat-font);
+    font-weight: 800;
+}
+
+
+#image-track{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#image-track img{
+    width: 25vmin;
+    height: 50vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: transform 0.5s ease-in-out;
+    user-select: none;
+}
+
+#image-track img:hover{
+    cursor: pointer;
+}
+
+
+.updateSection{
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+}
+
+.shareContainer{
+    position: relative;
+    width: 75%;
+    display: flex;
+    background-color: #2A2B32;
+    border-left: 2px solid var(--blue-color);
+    padding: 10px;
+}
+
+.shareText h1{
+    font-size: 1rem;
+    color: var(--blue-color);
+    text-align: left;
+    font-family: var(--montserrat-font);
+    font-weight: 800;
+}
+
+.shareText p{
+    font-size: 0.8rem;
+    color: var(--white-color);
+    text-align: left;
+    font-family: var(--montserrat-font);
+    font-weight: 400;
+}
+
+.brandingIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.brandingIcons li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.brandingLink{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.brandingBtn{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.brandingBtn:hover{
+    cursor: pointer;
+}
+
+.telegramBtn{
+    background-color: #0B88C8;
+}
+
+.redditBtn{
+    background-color: #FF4500;
+}
+
+.facebookBtn{
+    background-color: #4267B2;
+}
+
+.whatsappBtn{
+    background-color: #25D366;
+}
+
+.twitterBtn{
+    background-color: #1DA1F2;
+}
+
+.tumblrBtn{
+    background-color: #36465D;
+}
+
+.latestUpdate{
+    position: relative;
+    width: 75%;
+    margin-top: 30px;   
+}
+
+.latestUpdate>h1{
+    color: var(--blue-color);
+    text-align: left;
+    font-family: var(--montserrat-font);
+    font-weight: 800;
+}
+
+.latestViewMore{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.latestCardContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+.latestCardItem{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.latestCardItem img{
+    width: 100%;
+    height: 120%;
+    user-select: none;    
+}
+
+
+.epNos{
+    font-size: 14px;
+    color: var(--white-color);
+    border-radius: 2px;
+    border: none;
+    background-color: #0B88C8;
+    transform: translate(10%,-150%);
+}
+
+.aboutLatestAnimeText{
+    font-size: 14px;
+    color: white;
+    opacity: 0.6;
+    margin-top: -20px;
+    background-color: #2A2B32;
+    font-family: var(--montserrat-font);
+    padding: 10px;
+}
+
+.aboutLatestAnimeText ul{
+    display: flex;
+    gap: 15px;
+    color: grey;
+    margin-left: -20px;
+}
+
+
+.aboutLatestAnimeText ul li{
+    list-style: none;
+}
+
+.hoverLatestContainer{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    font-family: var(--montserrat-font);
+    padding: 10px;
+    animation: popOut 0.2s ease-in-out;
+    z-index: 999;
+}
+
+@keyframes popOut{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.hoverLatestContainer h1{
+    font-size: 14px;
+
+}
+
+.ratingLatest{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingBtn{
+    background-color: #0B88C8;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: var(--montserrat-font);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hoverLatestContainer p{
+    font-size: 14px;
+}
+
+.hoverLatestContainer h4{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.latestHeroBtns{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.watchNowLatestBtn{
+    color: white;
+    font-size: 1rem;
+    font-family: var(--montserrat-font);
+    border: none;
+    border-radius: 20px;
+    background-color: #1DA1F2;
+    padding: 2px 10px 2px 10px;
+}
+
+.watchNowLatestBtn:hover{
+    cursor: pointer;
+    background-color: #0B88C8;
+}
+
+.addToQueuebtn{
+    color: white;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(67, 66, 66, 0.3);
+}
+
+.addToQueuebtn:hover{
+    cursor: pointer;
+    background-color: rgba(67, 66, 66, 0.5);
+}
+
+.newAdded{
+    position: relative;
+    width: 75%;
+}
+
+.newAdded>h1{
+    color: var(--blue-color);
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+}
+
+.rightpanelBtns{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    padding: 10px;
+}
+
+.newAddedPreBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.newAddedPreBtn:hover{
+    cursor: pointer;
+    background-color: #0B88C8;
+}
+
+.newAddedNextBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.newAddedNextBtn:hover{
+    cursor: pointer;
+    background-color: #0B88C8;
+}
+
+.newAddedViewMore{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--montserrat-font);
+    padding: 10px;
+}
+
+.newAddedItemContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+}
+
+
+.newAddedCardItem{
+    position: relative;
+}
+
+.newAddedCardItem img{
+    width: 100%;
+}
+
+.newAddedEpNos{
+    background-color: #0B88C8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-family: var(--montserrat-font);
+    transform: translate(10%,-150%);
+}
+
+#newAddedHoverHiddenMenu{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    font-family: var(--montserrat-font);
+    padding: 10px;
+    animation: popOut 0.2s ease-in-out;
+    z-index: 999;
+}
+
+#newAddedHoverHiddenMenu h1{
+    font-size: 14px;
+}
+
+#newAddedHoverHiddenMenu p{
+    font-size: 12px;
+}
+
+#newAddedHoverHiddenMenu h4{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.upcommingAnimeItems{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+}   
+
+.upcomminAnimeCardItem img{
+    width: 100%;
+}
+
+.upcommingEpNos{
+    background-color: #0B88C8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-family: var(--montserrat-font);
+    transform: translate(10%,-150%);
+}
+
+#upcomAnimeHoverHiddenMenu{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    font-family: var(--montserrat-font);
+    padding: 10px;
+    animation: popOut 0.2s ease-in-out;
+    z-index: 999;
+}
+
+#upcomAnimeHoverHiddenMenu h1{
+    font-size: 14px;
+}
+
+#upcomAnimeHoverHiddenMenu p{
+    font-size: 12px;
+}
+
+#upcomAnimeHoverHiddenMenu h4{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.HeroSection{
+    position: relative;
+}
+
+.GenreSection{
+    width: 18%;
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    padding: 5px;
+}
+
+.GenreSection h1{
+    color: #0B88C8;
+    padding: 5px;
+    font-family: var(--montserrat-font);
+}
+
+.GenreContainer{
+    background-color: #2A2B32;
+    width: 110%;
+}
+
+.GenreContainer ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+}
+
+.GenreContainer ul a{
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--montserrat-font);
+    font-size: 14px;
+}
+
+.showMoreGenre{
+    color: white;
+    font-family: var(--montserrat-font);
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 50px 10px 50px;
+    transform: translateX(26%);
+    margin-bottom: 15px;
+}
+
+.showMoreGenre:hover{
+    cursor: pointer;
+    background-color: #464750;
+}
+
+
+.footer_stats{
+    width: 100vw;
+    height: 300px;
+}
+
+.footer_branding{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 10px 160px;
+}
+
+.footer_branding img{
+    width: 150px;
+    height: 36px;
+}
+
+
+.branding_text h3{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: -20px;
+}
+
+.footer_branding h2 a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer_branding h2 a:hover{
+    color: #0369A1;
+}
+
+.copy_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 160px;
+}
+
+.copy_right p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.footer_nav{
+    display: none;
+}
